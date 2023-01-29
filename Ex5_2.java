@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class  Ex5_2
+{
+	public static void main(String[] args) 
+	{
+		Scanner scanner = new Scanner(System.in);
+		int[] Score = new int[5];
+		int sum = 0, avr = 0;
+			
+		System.out.println("점수를 입력하세요");
+		System.out.print("> ");
+		for (int i=0; i<Score.length; i++)
+		{
+			Score[i] = scanner.nextInt();
+		}
+		scanner.close();
+
+		for (int i=0; i<Score.length; i++)
+		{
+			sum += Score[i];
+		}
+		avr = sum/Score.length;
+		System.out.println("총합 : " + sum);
+		System.out.println("평균 : " + avr);
+
+	}
+}

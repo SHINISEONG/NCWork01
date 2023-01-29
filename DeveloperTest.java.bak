@@ -1,0 +1,25 @@
+// package jb03.part03;
+
+public class  DeveloperTest
+{
+	public static void main(String[] args) 
+	{
+		Developer developer = new Developer();
+
+		System.out.prinln("이름 : " + developer.name);
+		System.out.prinln("직업 : " + developer.job);
+		System.out.prinln("평균수입 : " + developer.avgIncome);
+		System.out.prinln("Project 경력 : " + developer.projectCareer);
+
+		System.out.prinln("==============================");
+
+		developer.participateProject();
+		System.out.prinln("평균수입 : " + developer.avgIncome);
+		System.out.prinln("Project 경력 : " + developer.projectCareer);
+
+		System.out.prinln("==============================");
+		
+		developer.instruct();
+		System.out.prinln("평균수입 : " + developer.avgIncome);
+	}//end of main
+}//end of class

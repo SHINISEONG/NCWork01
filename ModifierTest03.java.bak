@@ -1,0 +1,16 @@
+//package jb05.part03;
+final class  TopSecret03
+{
+	///field
+	private final int secretNo=7777;
+	///constructor
+	private TopSecret03(){
+	}
+	public int getSecretNo(int pwd){
+		if(pwd==0){
+			return secretNo;
+		} else {
+			return 0;
+		}
+	}
+}
